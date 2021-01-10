@@ -1,0 +1,68 @@
+mixin speciality(icon, title, description)
+    .col-md-4
+        .card.border-0.speciality-card
+            .icon-holder
+                img.img-fluid(src=`assets/img/${icon}.png`, alt=`Image of ${title}`)
+            .divider.text-center.my-4
+                img.img-fluid(src="assets/img/activity.png", alt="divider")
+            .card-body
+                h4.card-title #{title}
+                p.text-muted #{description}
+
+mixin testinomials(image, name, category, review)
+    .card.testinomial-card.border-0.bg-transparent
+        .card-body
+            .row
+                .col-md-2.align-self-center
+                    .image-block
+                        img.img-fluid.d-inline-block.rounded-circle(src=`assets/img/${image}.png`, alt="")
+                    .reviewer-info.mt-2
+                        p.small.text-capitalize.mb-0 #{name}
+                        p.small.text-muted #{category}
+                .col-md-10.mt-3.mt-md-0
+                    blockquote.fst-italic.review #{review}
+
+mixin renderCounter(image, amount, type)            
+    .col-md-4
+        .counter-block.d-flex.align-items-center.py-4
+            .image-block.me-4
+                img.img-fluid(src=`assets/img/${image}.png`, alt="")
+            .counter-data.text-center
+                p.counter.h2(data-target=`${amount}`) 0
+                p #{type}
+
+mixin renderDepartments(icon, title, description)
+    .col-md-4.mb-5
+        .card.departments-card.text-center
+            .image-block
+                img.img-fluid(src=`assets/img/${icon}.png`, alt="")
+            .card-body.position-relative
+                h5.card-title #{title}
+                p.card-text.small.text-muted #{description}
+                button.btn.rounded-pill.position-absolute.readmore-btn Read More
+
+mixin services(img, icon, title, desc)
+    .col-md-4(onclick="window.location.href='service-details.html'")
+        .card.border-0.services-card
+            .img-block
+                img(src=`assets/img/${img}.png`, alt="")
+            .icon-holder
+                img.img-fluid(src=`assets/img/${icon}.png`, alt="")
+            .card-body
+                p.h5.card-title #{title}
+                p.small.card-text.text-muted #{desc}
+            .card-footer.bg-transparent.border-0.mt-4
+                button.btn.btn-sm.rounded-pill.text-uppercase read more
+
+mixin renderDoctors(img, name, type)
+    div(class=`col-md-3 all ${type} mb-4`)
+        .card.doctor-card-v
+            .card-body.text-center
+                .img-block.mb-3
+                    img.img-fluid(src=`assets/img/${img}.jpg`, alt="")
+                p.h4.card-title #{name}
+                p.text-capitalize #{type}
+                button.btn.btn-outline-secondary.rounded-pill.text-uppercase.btn-sm book appointment
+mixin divider
+    .divider.text-center.my-4
+        img.img-fluid(src="assets/img/activity.png", alt="")

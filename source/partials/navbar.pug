@@ -1,0 +1,56 @@
+.topbar.py-1.bg-primary
+.social-bar.bg-light.py-1
+    .container.d-flex.align-items-center.justify-content-between.flex-column.flex-md-row
+        ul.social-list.list-unstyled.list-inline.mb-0.py-1
+            li.list-inline-item
+                a(href="#")
+                    i.mdi.mdi-facebook
+            li.list-inline-item
+                a(href="#")
+                    i.mdi.mdi-twitter
+            li.list-inline-item
+                a(href="#")
+                    i.mdi.mdi-instagram
+        ul.list-unstyled.list-inline.mb-0
+            li.list-inline-item
+                a.text-decoration-none.small.text-muted(href="#")
+                    i.mdi.mdi-map-marker.me-1
+                    span Opposite of Sarkar Nurshing Home, Dhaleswar, Agartala, Tripura 799001
+
+.container.py-4.website-header
+    .row
+        .col-md-6.mb-3.mb-md-0
+            .logo-holder.text-center.text-md-start
+                img.img-fluid.brand-logo(src="assets/img/logo.png", alt="ASR Hospital Logo")
+        .col-md-6.d-flex.justify-content-end.align-items-center.flex-column.flex-md-row
+            a.cta-button.mb-2.mb-md-0.me-0.me-md-2(href=`tel:+91${phoneNumber}`)
+                i.mdi.mdi-phone.me-1
+                span.me-2 Call Us
+                span.fw-bold #{phoneNumber}
+                
+            a.cta-button(href=`mailto:${emailId}`)
+                i.mdi.mdi-email.me-1
+                span.me-2 Email Us
+                span.fw-bold #{emailId}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.py-2.py-md-0
+  .container
+    a.navbar-brand.text-uppercase.d-block.d-md-none(href="#") menu
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+                a.nav-link.active(aria-current='page' href='index.html') Home
+            li.nav-item
+                a.nav-link(href='about.html') About
+            li.nav-item
+                a.nav-link(href="services.html") Services
+            li.nav-item
+                a.nav-link(href="departments.html") Departments
+            li.nav-item
+                a.nav-link(href="contact.html") Contact
+        ul.navbar-nav.ms-auto
+            li
+                a.btn.btn-primary.text-uppercase(href="#") Book Appointment
+

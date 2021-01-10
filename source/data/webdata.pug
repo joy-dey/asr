@@ -1,0 +1,230 @@
+- const websiteName = "ASR Website"
+- const phoneNumber = "03812384444"
+- const emailId = "hello@asrhospital.com"
+- const tagline = "Our medical specialists care about you & your family’s health"
+-
+    const navOptions = ['Home', 'About', 'Services', 'Departments', 'Doctors']
+- 
+    const speciality = [
+        {
+            "icon": "doctor",
+            "title": "Healthcare Professionals",
+            "description": "Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo aoreet dignissim lectus etiam ipsum habitant tristique"
+        },
+        {
+            "icon": "medical-bag",
+            "title": "Medical Excellence",
+            "description": "Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo aoreet dignissim lectus etiam ipsum habitant tristique"
+        },
+        {
+            "icon": "bandage",
+            "title": "Latest Technologies",
+            "description": "Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo aoreet dignissim lectus etiam ipsum habitant tristique"
+        },
+
+    ]
+
+- 
+    const departments = [
+          {
+          "icons": "diagnosis",
+          "title": "Diaognisis and Research",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "icons": "teeth",
+          "title": "Dental Surgery",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+         {
+          "icons": "cancer",
+          "title": "Cancer chronology",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+         {
+          "icons": "neurology",
+          "title": "Neurology",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+         {
+          "icons": "drug",
+          "title": "Drug / Medicine",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "icons": "health",
+          "title": "Heart Center",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "icons": "endocrinology",
+          "title": "Endocrinology",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "icons": "baby",
+          "title": "Pregnancy and Births",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "icons": "councelling",
+          "title": "Medical Counseling",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        }
+
+    ]
+
+-
+    const reviews = [
+        {
+            "img": "review",
+            "name": "Abhijit Das",
+            "category": "Patient",
+            "review": "Etiam feugiat libero et sapien. Donec rutrum neque ac congue venenatis lorem ipsum pulvinar leo sollicitudin metus massa non velit. Maecenas elementum. In a nulla. Mauris metus turpis iaculis hendrerit vel pretium non, magna. Morbi elit ipsum mattis vitae placerat ut volutpat eget nisi. Aenean vel lectus alc orci elementum tincidunt. Quisque vel ante quis massa tristique iaculis. Aenean auctor lorem a felis. Nunc tempus mauris et lectus. Sed at tortor aenean erat orci sed ipsum mollis quis."
+        },
+        {
+            "img": "review",
+            "name": "Rahul Bhadra",
+            "category": "Patient",
+            "review": "Etiam feugiat libero et sapien. Donec rutrum neque ac congue venenatis lorem ipsum pulvinar leo sollicitudin metus massa non velit. Maecenas elementum. In a nulla. Mauris metus turpis iaculis hendrerit vel pretium non, magna. Morbi elit ipsum mattis vitae placerat ut volutpat eget nisi. Aenean vel lectus alc orci elementum tincidunt. Quisque vel ante quis massa tristique iaculis. Aenean auctor lorem a felis. Nunc tempus mauris et lectus. Sed at tortor aenean erat orci sed ipsum mollis quis."
+        },
+        {
+            "img": "review",
+            "name": "Samrat Chaudhry",
+            "category": "Patient",
+            "review": "Etiam feugiat libero et sapien. Donec rutrum neque ac congue venenatis lorem ipsum pulvinar leo sollicitudin metus massa non velit. Maecenas elementum. In a nulla. Mauris metus turpis iaculis hendrerit vel pretium non, magna. Morbi elit ipsum mattis vitae placerat ut volutpat eget nisi. Aenean vel lectus alc orci elementum tincidunt. Quisque vel ante quis massa tristique iaculis. Aenean auctor lorem a felis. Nunc tempus mauris et lectus. Sed at tortor aenean erat orci sed ipsum mollis quis."
+        },
+        {
+            "img": "review",
+            "name": "Pallab Bhuyan",
+            "category": "Patient",
+            "review": "Etiam feugiat libero et sapien. Donec rutrum neque ac congue venenatis lorem ipsum pulvinar leo sollicitudin metus massa non velit. Maecenas elementum. In a nulla. Mauris metus turpis iaculis hendrerit vel pretium non, magna. Morbi elit ipsum mattis vitae placerat ut volutpat eget nisi. Aenean vel lectus alc orci elementum tincidunt. Quisque vel ante quis massa tristique iaculis. Aenean auctor lorem a felis. Nunc tempus mauris et lectus. Sed at tortor aenean erat orci sed ipsum mollis quis."
+        },
+    ]
+
+-
+    const counterData = [
+        {
+            "icon": "doc",
+            "amount": 126,
+            "type": "Hospital Rooms"
+        },
+        {
+            "icon": "hospital",
+            "amount": 510,
+            "type": "Qualified Staff"
+        },
+        {
+            "icon": "health",
+            "amount": 6200,
+            "type": "Satisfied Patients"
+        },
+    ]
+
+-
+    const services = [
+        {
+          "img": "Diaognose",
+          "icons": "diagnosis",
+          "title": "Diaognisis and Research",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "img": "Dental",
+          "icons": "teeth",
+          "title": "Dental Surgery",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+         {
+          "img": "cancer oncology",
+          "icons": "cancer",
+          "title": "Cancer chronology",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+         {
+          "img": "Neurologys",
+          "icons": "neurology",
+          "title": "Neurology",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+         {
+          "img": "Drugs",
+          "icons": "drug",
+          "title": "Drug / Medicine",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "img": "Heart center",
+          "icons": "health",
+          "title": "Heart Center",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "img": "Endrocinology",
+          "icons": "endocrinology",
+          "title": "Endocrinology",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "img": "pregnancy",
+          "icons": "baby",
+          "title": "Pregnancy and Births",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        },
+        {
+          "img": "medical councelling",
+          "icons": "councelling",
+          "title": "Medical Counseling",
+          "description": "Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nunc placerat cursus"
+        }
+
+    ]
+- const doctorTypes = ['all','pediatricians', 'surgeon', 'neurologist', 'cardiologist', 'physician', 'nurse', 'dentist', 'orthopedics', 'gynocologist']
+-
+  const doctors = [
+    {
+      "img": "1.0",
+      "name": "Shanon Laura",
+      "type": "surgeon"
+    },
+    {
+      "img": "doc2 (1)",
+      "name": "Aaron Cormac",
+      "type": "neurologist"
+    },
+    {
+      "img": "3",
+      "name": "Billy Stumps",
+      "type": "cardiologist"
+    },
+    {
+      "img": "4",
+      "name": "Andrea Jean",
+      "type": "nurse"
+    },
+    {
+      "img": "5",
+      "name": "Carol Sandra",
+      "type": "orthopedics"
+    },
+    {
+      "img": "6",
+      "name": "Robert Smith",
+      "type": "gynocologist"
+    },
+    {
+      "img": "7",
+      "name": "Alex Furgosen",
+      "type": "dentist"
+    },
+    {
+      "img": "8",
+      "name": "Helen Sarkar",
+      "type": "surgeon"
+    },
+    {
+      "img": "1.0",
+      "name": "Alex Debnath",
+      "type": "surgeon"
+    },
+  ]

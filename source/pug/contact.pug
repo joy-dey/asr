@@ -1,0 +1,41 @@
+extend ../template/template
+block main
+    main
+        .top-banner
+            .banner-text.container.text-white
+                p.h4.text-uppercase Contact us
+                p.mb-0 Egestas dolor erat vamus suscip ipsum estduin
+        nav.py-2.border-bottom(aria-label="breadcrumb")
+            .container
+                ol.breadcrumb.mb-0
+                    li.breadcrumb-item
+                        a.text-decoration-none(href="index.html") Home
+                    li.breadcrumb-item.active(aria-current="page")
+                        a.text-decoration-none(href="contact.html") Contact
+
+        .contact-section.section-padding
+            .image-block.text-center
+                img.img-fluid(src="assets/img/map.png", alt="")
+            
+            +divider
+
+            .contact-block.py-5
+                .row
+                    .col-md-4.contact-card
+                        .card
+                            .card-body
+                                .icon-holder.text-center
+                                    img.img-fluid(src="assets/img/mapmarker.png", alt="")
+                                p.fw-bold.text-muted.small.text-center.pt-5.card-text Opposite of Sarkar Nurshing Home, Dhaleswar, Agartala, Tripura 799001
+                    .col-md-4.contact-card
+                        .card
+                            .card-body
+                                .icon-holder.text-center
+                                    img.img-fluid(src="assets/img/call.png", alt="")
+                                p.fw-bold.text-muted.small.text-center.pt-5.card-text #{phoneNumber}
+                    .col-md-4.contact-card
+                        .card
+                            .card-body
+                                .icon-holder.text-center
+                                    img.img-fluid(src="assets/img/email.png", alt="")
+                                p.fw-bold.text-muted.small.text-center.pt-5.card-text #{emailId}

@@ -1,0 +1,75 @@
+extend ../template/template
+block main
+    main
+        .top-banner
+            .banner-text.container.text-white
+                p.h4.text-uppercase Neurology
+                p.mb-0 Egestas dolor erat vamus suscip ipsum estduin
+        nav.py-2.border-bottom(aria-label="breadcrumb")
+            .container
+                ol.breadcrumb.mb-0
+                    li.breadcrumb-item
+                        a.text-decoration-none(href="index.html") Home
+                    li.breadcrumb-item
+                        a.text-decoration-none(href="services.html") Services
+                    li.breadcrumb-item.active(aria-current="page")
+                        a.text-decoration-none(href="service-details.html") Neurology
+        
+        .description-section.section-padding
+            .container
+                .row
+                    .col-md-8
+                        .image-holder.position-relative
+                            img.img-fluid(src="assets/img/detailsbanner.jpg", alt="")
+                            .icon-holder.position-absolute.w-100.d-flex.justify-content-center
+                                img.img-fluid(src="assets/img/neurology.png", alt="")
+                        
+                        .description-block.mt-5
+                            p.small.text-muted.text-justify Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error facilis, iste ea quasi delectus possimus nobis. Culpa quod libero asperiores consectetur vero numquam laudantium eius et id eaque, doloribus perspiciatis dolor! Quos, beatae maiores officia vero, maxime quasi non iure deleniti quisquam cumque iusto rem veniam! Deserunt sunt minus ratione quis molestiae voluptatum itaque magnam? Quo tenetur magni inventore iure doloribus nesciunt doloremque libero, et modi hic veritatis repellendus maxime ut cupiditate eveniet illo culpa impedit officia, error beatae rerum! Officia explicabo est debitis aspernatur repellendus, consequatur quaerat repudiandae ab inventore molestiae. Quibusdam harum commodi molestiae corrupti sed ratione. Earum optio accusamus officiis incidunt illum eos quidem, impedit ducimus deleniti aliquam fugiat molestias quibusdam dolore et dicta placeat facilis libero. Libero nobis eveniet voluptatem architecto maxime explicabo placeat quaerat tenetur aspernatur vero est quo mollitia minus similique, accusantium delectus magnam, praesentium commodi omnis impedit eum aliquid! Optio magnam facere enim?
+                        
+                        +divider
+
+                        .feature-block
+                            .header.text-center
+                                p.display-5 We Diagnosing And Treat More Than 400 Neurological Conditions
+                                p.h4.fw-light Our medical specialists care about you &amp; your family’s health
+                        
+                        +divider
+
+                        .block
+                            p.small.text-muted Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo. Cupiditate atque commodi ipsam voluptates quam aperiam accusamus veritatis harum fugit, maiores dolor officiis cumque, nobis qui. Eos quam quis doloribus eum quia vero sed commodi inventore, sit, exercitationem ea dolorum iusto repellat veniam enim nam facere dignissimos iure distinctio excepturi accusamus? Magnam officia fugit minus, dolores esse eveniet perferendis incidunt molestias dicta consequuntur delectus inventore unde hic eius iure culpa error ab soluta blanditiis reiciendis aut totam itaque. Atque!
+                            span.fw-bold Features &amp; Spotlight
+                            ul.features.my-3
+                                li.text-muted Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                li.text-muted Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                li.text-muted Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                li.text-muted Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                li.text-muted Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            
+                            p.small.text-muted Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo pariatur, perspiciatis facilis in quibusdam ipsa maiores ad delectus recusandae provident ipsum doloremque expedita? Nisi voluptate voluptatem eius cumque ratione neque aut magni rerum impedit, veritatis, beatae omnis et. Non, sint.
+
+                            button.btn.btn-primary.rounded-pill.my-4
+                                i.mdi.mdi-file-pdf
+                                |  Download as PDF
+                    .col-md-4
+                        button.btn.btn-lg.btn-primary.rounded-pill.w-100.text-uppercase request an appointment
+                        ul.list-group.mt-5.mb-4
+                            each item in departments
+                                li.list-group-item #{item.title}
+                        
+                        .card.busniess-card
+                            img.img-fluid.card-img-top.w-100(src="assets/img/1.0.jpg", alt="")
+                            .card-body.text-center
+                                p 
+                                    | At Our Family Clinic You Will Get 
+                                    br 
+                                    strong Full Treatment
+                                
+                            .card-footer.text-center
+                                a.text-primary.text-decoration-none.fw-bold.h5(href="#")
+                                    i.mdi.mdi-phone
+                                    span.ms-2 +91-123-456-7890
+                                br
+                                small.text-muted Call for appointment
+
+                                

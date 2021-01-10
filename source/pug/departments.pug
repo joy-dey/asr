@@ -1,0 +1,31 @@
+extend ../template/template
+block main
+    main
+        .top-banner
+            .banner-text.container.text-white
+                p.h4.text-uppercase our departments
+                p.mb-0 Egestas dolor erat vamus suscip ipsum estduin
+        nav.py-2.border-bottom(aria-label="breadcrumb")
+            .container
+                ol.breadcrumb.mb-0
+                    li.breadcrumb-item
+                        a.text-decoration-none(href="#") Home
+                    li.breadcrumb-item.active(aria-current="page")
+                        a.text-decoration-none(href="#") Departments
+        
+        .department-section.section-padding
+            .container
+                .header-block.text-center
+                    p.h2.section-heading.fw-light 
+                        | Featured Clinical 
+                        span.fw-bold Departments
+                    p.section-subheading Our medical specialists care about you &amp; your family’s health
+                
+                .divider.text-center
+                    img.img-fluid(src="assets/img/activity.png", alt="")
+
+                .departments-holder.py-5
+                    .row
+                       each dept in departments
+                         +renderDepartments(dept.icons, dept.title, dept.description)
+

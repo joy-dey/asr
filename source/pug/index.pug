@@ -1,0 +1,64 @@
+extend ../template/template
+block main
+    main
+        .hero-image.p-4.d-flex.flex-column.justify-content-center.align-items-center
+            .hero-content.d-flex.flex-column.justify-content-center.align-items-center
+                .container.text-center
+                    p.h5.bg-primary.text-white.mb-0.py-2.px-4 A Team of Medical Professionals
+                    p.h2.bg-dark.text-white.py-2.px-4 To Take Care of Your Health
+                    button.btn-primary.btn.rounded-pill.text-uppercase.fw-bold.btn-lg book appointment
+        .appointment-block
+            .container
+                .row
+                    .col-12
+                        p.h5
+                            i.mdi.mdi-square-edit-outline.me-2
+                            span Need a Doctor for Check-up?
+                        p.h2.text-uppercase.fw-bold book an appointment now
+                        button.cta-button.text-uppercase.mt-3 get an appointment
+        .welcome-section.section-padding
+            .container
+                .header-block.text-center
+                    p.h2.section-heading.fw-light 
+                        | Welcome to 
+                        span.fw-bold #{websiteName}
+                    p.section-subheading #{tagline}
+                    .speciality-block.py-5
+                        .row
+                            each service in speciality
+                                +speciality(service.icon, service.title, service.description)
+        
+        .testinomial-section.section-padding
+            .container
+                .header-block.text-center
+                    p.h2.section-heading.fw-light
+                        | What our  
+                        span.fw-bold Patients are Saying
+                    p.section-subheading Purus sapien consequat vitae sagittis ut facilisis arcu
+                    .divider
+                        img.img-fluid(src="assets/img/activity.png", alt="")
+                    .slider-block.py-4
+                        each review in reviews
+                            +testinomials(review.img, review.name, review.category, review.review)
+
+        .video-block.py-5
+            .container
+                .row
+                    .col-md-7
+                        p.h1.fw-bolder.text-capitalize.mb-0 we diagnose &amp; treat
+                        span.text-capitalize.h3.fw-light Unique Problem in Our Research
+                        p.small.mt-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam vero commodi molestias blanditiis debitis. Dignissimos quos laudantium iste? Ad atque voluptatum exercitationem quas ipsum!
+                        button.btn.btn-lg.btn-outline-light.text-capitalize.rounded-pill watch the video
+                    .col-md-5
+                        .video-item-holder.position-relative
+                            img.img-fluid(src="assets/img/thumbnail.jpg", alt="")
+                            .play-button.position-absolute
+                                i.mdi.mdi-play
+
+
+        .counter-section
+            .container
+                .row
+                    each data in counterData
+                        +renderCounter(data.icon, data.amount, data.type)                    
+                            

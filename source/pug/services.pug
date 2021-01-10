@@ -1,0 +1,30 @@
+extend ../template/template
+block main
+    main
+        .top-banner
+                .banner-text.container.text-white
+                    p.h4.text-uppercase our services
+                    p.mb-0 Egestas dolor erat vamus suscip ipsum estduin
+        nav.py-2.border-bottom(aria-label="breadcrumb")
+            .container
+                ol.breadcrumb.mb-0
+                    li.breadcrumb-item
+                        a.text-decoration-none(href="index.html") Home
+                    li.breadcrumb-item.active(aria-current="page")
+                        a.text-decoration-none(href="services.html") services
+        
+        .department-section.section-padding
+            .container
+                .header-block.text-center
+                    p.h2.section-heading.fw-light 
+                        | Featured Clinical Services 
+                        span.fw-bold For Patients
+                    p.section-subheading Our medical specialists care about you &amp; your family’s health
+                
+                .divider.text-center
+                    img.img-fluid(src="assets/img/activity.png", alt="")
+                
+                .services-block.py-5
+                    .row
+                        each item in services
+                            +services(item.img, item.icons, item.title, item.description)
