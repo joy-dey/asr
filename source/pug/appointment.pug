@@ -1,0 +1,120 @@
+extend ../template/template
+block main
+    main
+        .top-banner
+            .banner-text.container.text-white
+                p.h4.text-uppercase book appointment
+                p.mb-0 Egestas dolor erat vamus suscip ipsum estduin
+        nav.py-2.border-bottom(aria-label="breadcrumb")
+            .container
+                ol.breadcrumb.mb-0
+                    li.breadcrumb-item
+                        a.text-decoration-none(href="index.html") Home
+                    li.breadcrumb-item.active(aria-current="page")
+                        a.text-decoration-none(href="appointment.html") Book Appointment
+        
+        .appointment-section.section-padding
+            .card
+                .card-header
+                    .row
+                        .col-md-6.mb-3.mb-md-0
+                            .d-flex.align-items-center
+                                span Doctor:
+                                select.form-select.mx-2(name="")
+                                    optgroup(label="Select a Doctor")
+                                        each doc in doctors
+                                            option(value="") Dr. #{doc.name}
+                        .col-md-6.d-flex.justify-content-end
+                            input.form-control(type="date", name="")
+                .card-body
+                    table.table.table-hover
+                        thead.border-0.border-bottom-secondary
+                            tr
+                                th Appointment Time
+                                th Name
+                                th Mobile Number
+                                th Action
+                        tbody
+                            tr.border-bottom-secondary
+                                td(data-bs-toggle="modal", data-bs-target="#exampleModal") 3:30
+                                td Rahul Bhadra
+                                td
+                                    a.text-decoration-none(href="tel:+")
+                                        i.mdi.mdi-phone
+                                        span 7005735127
+                                td
+                                    button.btn.btn-outline-primary.me-2.btn-sm
+                                        i.mdi.mdi-pencil
+                                    button.btn.btn-outline-danger.btn-sm
+                                        i.mdi.mdi-delete
+
+    .modal.fade#exampleModal(tabindex="-1", aria-labelledby="exampleModalLabel", aria-hidden="true")                                   
+        .modal-dialog.modal-lg
+            .modal-content
+                .modal-header
+                    h5.modal-title#exampleModalLabel Book Appointment
+                    button(type="button", data-bs-dismiss="modal", aria-label="Close")
+                
+                .modal-body
+                    .container
+                        .row
+                            .col-md-12.mb-3
+                                .form-group.border-0
+                                    span Doctor:
+                                    select.form-select(name="")
+                                        optgroup(label="Select a Doctor")
+                                            each doc in doctors
+                                                option Dr.#{doc.name}
+                            
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Appointment Date
+                                    input.form-control(type="date", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Appointment Time
+                                    input.form-control(type="text", name="" disabled)
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Name
+                                    input.form-control(type="text", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Mobile Number
+                                    input.form-control(type="tel", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Gender
+                                    select.form-select(name="")
+                                        optgroup(label="Select a Doctor")
+                                            option(value="") Male
+                                            option(value="") Female
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Date of Birth
+                                    input.form-control(type="date", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Age
+                                    input.form-control(type="number", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Patient Category
+                                    input.form-control(type="text", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Address
+                                    input.form-control(type="text", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label Area &amp; City
+                                    input.form-control(type="text", name="")
+                            .col-md-6.mb-3
+                                .form-group
+                                    label PIN Code
+                                    input.form-control(type="number", name="", inputmode="tel")
+                .modal-footer
+                    button.btn.btn-secondary(data-bs-dismiss="modal") Close
+                    button.btn.btn-primary(data-bs-dismiss="modal") Save Changes
+                            
+                                

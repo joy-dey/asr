@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css"/>
   </head>
   <body>
+    <div class="preloader"><img class="img-fluid" src="data:image/png;base64,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" alt=""/></div>
     <div class="topbar py-1 bg-primary"></div>
     <div class="social-bar bg-light py-1">
       <div class="container d-flex align-items-center justify-content-between flex-column flex-md-row">
@@ -27,7 +28,7 @@
     <div class="container py-4 website-header">
       <div class="row">
         <div class="col-md-6 mb-3 mb-md-0">
-          <div class="logo-holder text-center text-md-start"><img class="img-fluid brand-logo" src="assets/img/logo.png" alt="ASR Hospital Logo"/></div>
+          <div class="logo-holder text-center text-md-start" onclick="location.href='index.html'"><img class="img-fluid brand-logo" src="assets/img/logo.png" alt="ASR Hospital Logo"/></div>
         </div>
         <div class="col-md-6 d-flex justify-content-end align-items-center flex-column flex-md-row"><a class="cta-button mb-2 mb-md-0 me-0 me-md-2" href="tel:+9103812384444"><i class="mdi mdi-phone me-1"></i><span class="me-2">Call Us</span><span class="fw-bold">03812384444</span></a><a class="cta-button" href="mailto:hello@asrhospital.com"><i class="mdi mdi-email me-1"></i><span class="me-2">Email Us</span><span class="fw-bold">hello@asrhospital.com</span></a></div>
       </div>
@@ -43,14 +44,16 @@
             <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
-       
+          <ul class="navbar-nav ms-auto">
+            <li><a class="btn btn-primary text-uppercase" href="appointment.html">Book Appointment</a></li>
+          </ul>
         </div>
       </div>
     </nav>
     <main>
       <div class="top-banner">
         <div class="banner-text container text-white">
-          <p class="h4 text-uppercase">Contact us</p>
+          <p class="h4 text-uppercase">book appointment</p>
           <p class="mb-0">Egestas dolor erat vamus suscip ipsum estduin</p>
         </div>
       </div>
@@ -58,205 +61,170 @@
         <div class="container">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a class="text-decoration-none" href="contact.html">Book appointment</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="text-decoration-none" href="appointment.html">Book Appointment</a></li>
           </ol>
         </div>
       </nav>
-      <div class="container booking p-4">
-         <div class="card border-0">
-             <div class="card-body">
-                <div class="card-header">
-                        <div class="row my-4">
-                            <div class="col-md-4 ">
-                                <div class="d-flex align-items-center">
-                                    <span>Doctor:</span>
-                                    <select class="form-select mx-2">
-                                        <option selected>Dr Reddy</option>
-                                        <option value="1">Rahul</option>
-                                        <option value="2">Joy</option>
-                                        <option value="3">Samrat</option>
-                                      </select>
-                                </div>
-                            </div>
-                           
-                            <div class="col-md-7 d-flex justify-content-end">
-                                <div class=" ">
-                                        <input type="date" name="" id="" class="form-control">
-                                
-        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Appointment time</th>
-                                        <th>Name</th>
-                                        <th>Mobile Number</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-bottom">
-                                        <td  data-bs-toggle="modal" data-bs-target="#exampleModal">3:30</td>
-                                        <td>
-                                            Rahul Bhadra
-                                        </td>
-                                        <td>
-                                            <a href="tel:+" class="text-decoration-none" data-toggle="tooltip" data-position="top" title="Call Patient">
-                                                <i class="fas fa-phone-alt mr-2"></i> 7005735127</a>
-                                        </td>
-                                        <td class="">
-                                            <a href="#" class="text-decoration-none btn btn-info btn-circle btn-sm" data-toggle="modal" data-target="#edit">
-                                                <i class="mdi mdi-pencil"></i>
-                                            </a>
-                                            <a href="#" class="text-decoration-none btn btn-danger btn-circle btn-sm" data-toggle="tooltip" data-position="top" title="Delete Appointment">
-                                                <i class="mdi mdi-delete"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                
-                
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- modal start -->
-                        <!-- Button trigger modal -->
-
-  <p>** Click on the appointment time to book the appointment slot</p>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Booking Appointment</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group border-0">
-                            <span>Doctor:</span>
-                            <select class="form-select ">
-                            <option selected>Dr Reddy</option>
-                            <option value="1">Rahul</option>
-                            <option value="2">Joy</option>
-                            <option value="3">Samrat</option>
-                          </select>
-                        </div>
-                    </div>
-                        
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="apptdate">Appointment Date</label>
-                            <input type="date" class="form-control" id="apptdate" placeholder="age ">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group border-0" >
-                            <label for="FirstName">Appointment Time</label>
-                            <select class="form-control " disabled>
-                            <option selected>08:48pm</option>
-                            <option value="1">09:40pm</option>
-                            <option value="2">10:48pm</option>
-                            <option value="3">11:48pm</option>
-                          </select>
-                        </div>
-                    </div>
-
-                  
-                    
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Name"> Name</label>
-                            <input type="text" class="form-control" id=" Name" placeholder=" Name">
-                        </div>
-                    </div>
-                   
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="MobileNumber"> Mobile number</label>
-                            <input type="tel" class="form-control" id="MobileNumber" placeholder="Mobile Number ">
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="Gender">Gender</label>
-                            <select class="form-select" id="Gender" required>
-                                                <option selected disabled value="">Gender</option>
-                                                <option>Male</option>
-                                                <option>FeMale</option>
-                                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="form-group">
-                            <label for="Dob">Date of Birth</label>
-                            <input type="date" class="form-control" id="Dob" placeholder=" Date of Birth">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="age">Age</label>
-                            <input type="number" class="form-control" id="age" placeholder="age ">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="PatientCategory">Patient Category(s)</label>
-                            <input type="text" class="form-control" id="PatientCategory" placeholder="Please Select">
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="FirstName">Address(s)</label>
-                            <input type="text" class="form-control" id="Address" placeholder=" Select Address" >
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label for="Area">Area and city</label>
-                            <input type="text" class="form-control" id="Area" placeholder=" Sector,21 Chandigarh" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="PinCode">PinCode</label>
-                            <input type="tel" class="form-control" id="Pincode" placeholder=" PinCode" >
-                        </div>
-                    </div>
+      <div class="appointment-section section-padding">
+        <div class="card">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="d-flex align-items-center"><span>Doctor:</span>
+                  <select class="form-select mx-2" name="">
+                    <optgroup label="Select a Doctor">
+                      <option value="">Dr. Shanon Laura</option>
+                      <option value="">Dr. Aaron Cormac</option>
+                      <option value="">Dr. Billy Stumps</option>
+                      <option value="">Dr. Andrea Jean</option>
+                      <option value="">Dr. Carol Sandra</option>
+                      <option value="">Dr. Robert Smith</option>
+                      <option value="">Dr. Alex Furgosen</option>
+                      <option value="">Dr. Helen Sarkar</option>
+                      <option value="">Dr. Alex Debnath</option>
+                    </optgroup>
+                  </select>
                 </div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end">
+                <input class="form-control" type="date" name=""/>
+              </div>
             </div>
+          </div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead class="border-0 border-bottom-secondary">
+                <tr>
+                  <th>Appointment Time</th>
+                  <th>Name</th>
+                  <th>Mobile Number</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-bottom-secondary">
+                  <td data-bs-toggle="modal" data-bs-target="#exampleModal">3:30</td>
+                  <td>Rahul Bhadra</td>
+                  <td><a class="text-decoration-none" href="tel:+"><i class="mdi mdi-phone"></i><span>7005735127</span></a></td>
+                  <td>
+                    <button class="btn btn-outline-primary me-2 btn-sm"><i class="mdi mdi-pencil"></i></button>
+                    <button class="btn btn-outline-danger btn-sm"><i class="mdi mdi-delete"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">                                  
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book Appointment</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <div class="form-group border-0"><span>Doctor:</span>
+                    <select class="form-select" name="">
+                      <optgroup label="Select a Doctor">
+                        <option>Dr.Shanon Laura</option>
+                        <option>Dr.Aaron Cormac</option>
+                        <option>Dr.Billy Stumps</option>
+                        <option>Dr.Andrea Jean</option>
+                        <option>Dr.Carol Sandra</option>
+                        <option>Dr.Robert Smith</option>
+                        <option>Dr.Alex Furgosen</option>
+                        <option>Dr.Helen Sarkar</option>
+                        <option>Dr.Alex Debnath</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Appointment Date</label>
+                    <input class="form-control" type="date" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Appointment Time</label>
+                    <input class="form-control" type="text" name="" disabled="disabled"/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" type="text" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input class="form-control" type="tel" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Gender</label>
+                    <select class="form-select" name="">
+                      <optgroup label="Select a Doctor">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input class="form-control" type="date" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Age</label>
+                    <input class="form-control" type="number" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Patient Category</label>
+                    <input class="form-control" type="text" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Address</label>
+                    <input class="form-control" type="text" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>Area &amp; City</label>
+                    <input class="form-control" type="text" name=""/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label>PIN Code</label>
+                    <input class="form-control" type="number" name="" inputmode="tel"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" data-bs-dismiss="modal">Save Changes</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-                        <!-- modal start -->
-                    
-                
-                </div>
-             </div>
-         </div>
-      </div>
-    </main>
     <footer class="bg-dark p-4">
       <div class="container">
         <div class="row">
@@ -269,7 +237,7 @@
                     <h2 class="text-uppercase">just make an appointment and you are done!</h2>
                   </div>
                   <div class="col-md-3 align-self-center text-center">
-                    <button class="btn rounded-pill btn-primary text-uppercase btn-lg">
+                    <button class="btn rounded-pill btn-primary text-uppercase btn-lg" onclick="location.href='appointment.html'">
                        Book appointment<i class="mdi mdi-plus ms-1"></i></button>
                   </div>
                 </div>
@@ -292,15 +260,15 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4 mb-3 mb md-0 text-white text-center">
+          <div class="col-md-4 mb-3 mb md-0 text-white">
             <p class="fw-bold mb-1">Quick Links</p>
             <div class="divider my-2"><img class="img-fluid" src="assets/img/activity.png" alt=""/></div>
             <ul class="list-group navOpt">
-              <li class="list-group item border-0 py-1 text-center"><a class="text-decoration-none text-white" href="#">Home</a></li>
-              <li class="list-group item border-0 py-1 text-center"><a class="text-decoration-none text-white" href="#">About</a></li>
-              <li class="list-group item border-0 py-1 text-center"><a class="text-decoration-none text-white" href="#">Services</a></li>
-              <li class="list-group item border-0 py-1 text-center"><a class="text-decoration-none text-white" href="#">Departments</a></li>
-              <li class="list-group item border-0 py-1 text-center"><a class="text-decoration-none text-white" href="#">Doctors</a></li>
+              <li class="list-group item border-0 py-1"><a class="text-decoration-none text-white" href="#">Home</a></li>
+              <li class="list-group item border-0 py-1"><a class="text-decoration-none text-white" href="#">About</a></li>
+              <li class="list-group item border-0 py-1"><a class="text-decoration-none text-white" href="#">Services</a></li>
+              <li class="list-group item border-0 py-1"><a class="text-decoration-none text-white" href="#">Departments</a></li>
+              <li class="list-group item border-0 py-1"><a class="text-decoration-none text-white" href="#">Doctors</a></li>
             </ul>
           </div>
           <div class="col-md-4 mb-3 mb md-0 text-white">
